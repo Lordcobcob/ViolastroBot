@@ -8,7 +8,7 @@ namespace ViolastroBot.Commands;
 [Name("Roulette")]
 public sealed class RouletteModule : ModuleBase<SocketCommandContext>
 {
-    private const int DefaultCooldownInMinutes = 15;
+    private const int DefaultCooldownInMinutes = 0;
     private const int PremiumCooldownInMinutes = 5;
     
     private static readonly Dictionary<ulong, DateTimeOffset> Cooldowns = new();
